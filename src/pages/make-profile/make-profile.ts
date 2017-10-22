@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the MakeProfilePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AngularFireAuth } from 'angularfire2/auth';
+import { Profile } from '../../models/profile';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { WelcomePage } from '../welcome/welcome';
+import { FoodhomePage } from '../foodhome/foodhome';
 
 @IonicPage()
 @Component({
@@ -15,11 +13,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MakeProfilePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  profile = {} as Profile;
+
+  constructor(private afAuth: AngularFireAuth, private afDatabase:AngularFireDatabase,
+    public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  submit(bussinessType){
+    if(bussinessType = "food"){
+      this.navCtrl.push(FoodhomePage);
+
+    }
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MakeProfilePage');
   }
+
+  
 
 }
