@@ -1,20 +1,22 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Seattle Food Cycle</ion-title>
+    <ion-title class="title">Seattle Food Cycle</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="mainContentArea">
   <h2>Welcome to Seattle FoodCycle!</h2>
-  <p>
-    We're here to connect the leftovers of the food industry to those in need!
-  </p>
-  <p>
-    We hope to foster the communication and transportation to reduce waste and empty stomachs
-  </p>
-  <div class="wrapper">
-  <button ion-button block id="login" (click)="login()">Login</button>
-  <br>
-  <button ion-button block id="signup" (click)="signup()">Signup</button>
-</div>
+  <div padding>
+    <p>
+      We're here to connect the leftovers of the food industry to those in need!
+    </p>
+    <p>
+      We hope to foster the communication and transportation to reduce waste and empty stomachs
+    </p>
+    <div class="wrapper">
+      <button ion-button block id="login" (click)="login()">Login</button>
+      <br>
+      <button ion-button block id="signup" (click)="signup()">Signup</button>
+    </div>
+  </div>
 </ion-content>
