@@ -1,26 +1,14 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+SeattleFoodCycle
 
-## How to use this template
+This application will act as a bridge between food suppliers and food-insecure communities, enabling companies to donate products that would otherwise go to waste.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+To run, download the cordova and ionic CLI.
 
-### With the Ionic CLI:
+cd into repository 
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+ionic serve -l
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
 
-Then, to run it, cd into `myTabs` and run:
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
 
