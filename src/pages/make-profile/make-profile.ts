@@ -22,15 +22,15 @@ export class MakeProfilePage {
   }
 
   submit(bussinessType){
-    if(bussinessType = "food"){
+    if(bussinessType == "food"){
       this.navCtrl.push(FoodhomePage);
 
     }
 
-    else if(bussinessType = "shelter" ){
+    else if(bussinessType == "shelter" ){
       this.navCtrl.push(ShelterhomePage);
     }
-    else if(bussinessType = "driver" ){
+    else if(bussinessType == "driver" ){
       this.navCtrl.push(DriverhomePage);
     }
   }
