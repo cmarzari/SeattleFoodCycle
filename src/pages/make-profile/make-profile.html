@@ -12,7 +12,7 @@
 
  <h1>Which of the following are you/is your business?</h1>
 <br>
-  <ion-list radio-group [(ngModel)]="profile.bussinessType">
+  <ion-list radio-group [(ngModel)]="bussinessType" id="type">
       <ion-item>
         <ion-label>Food Service Provider</ion-label>
         <ion-radio value="food" ></ion-radio>
@@ -28,6 +28,6 @@
     </ion-list>
   <br>
 
-  <button ion-button (click)="submit()">Create Profile</button>
+  <button ion-button (click)="submit(bussinessType)">Create Profile</button>
 
 </ion-content>

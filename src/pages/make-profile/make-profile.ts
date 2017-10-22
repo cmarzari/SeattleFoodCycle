@@ -5,6 +5,8 @@ import { Profile } from '../../models/profile';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { WelcomePage } from '../welcome/welcome';
 import { FoodhomePage } from '../foodhome/foodhome';
+import { ShelterhomePage } from '../shelterhome/shelterhome';
+import { DriverhomePage } from '../driverhome/driverhome';
 
 @IonicPage()
 @Component({
@@ -23,6 +25,13 @@ export class MakeProfilePage {
     if(bussinessType = "food"){
       this.navCtrl.push(FoodhomePage);
 
+    }
+
+    else if(bussinessType = "shelter" ){
+      this.navCtrl.push(ShelterhomePage);
+    }
+    else if(bussinessType = "driver" ){
+      this.navCtrl.push(DriverhomePage);
     }
   }
 

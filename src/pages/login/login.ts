@@ -4,6 +4,7 @@ import { User } from '../../models/user';
 import { AngularFireAuth } from 'angularfire2/auth';
 import { HomePage } from '../home/home';
 import { WelcomePage } from '../welcome/welcome';
+import { MakeProfilePage } from '../make-profile/make-profile';
 
 
 
@@ -28,7 +29,7 @@ export class LoginPage {
    const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
 
    if(result){
-   this.navCtrl.push(WelcomePage);
+   this.navCtrl.push(MakeProfilePage);
    }
 
   }

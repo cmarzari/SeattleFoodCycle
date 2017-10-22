@@ -13,6 +13,8 @@ import { SignupPage } from '../pages/signup/signup';
 import { MakeProfilePage } from '../pages/make-profile/make-profile';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { FoodhomePage } from '../pages/foodhome/foodhome';
+import { ShelterhomePage } from '../pages/shelterhome/shelterhome';
+import { DriverhomePage } from '../pages/driverhome/driverhome';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +36,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     SignupPage,
     MakeProfilePage,
     WelcomePage,
-    FoodhomePage
+    FoodhomePage,
+    ShelterhomePage,
+    DriverhomePage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     SignupPage,
     MakeProfilePage,
     WelcomePage,
-    FoodhomePage
+    FoodhomePage,
+    ShelterhomePage,
+    DriverhomePage
   ],
   providers: [
     StatusBar,
